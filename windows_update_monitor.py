@@ -146,6 +146,7 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
 
     @QtCore.pyqtSlot()
     def update_function(self):
+        tray_icon.setIcon(QtGui.QIcon("./img_downloading.ico"))
         xcmd = subprocess.Popen('powershell "./ps1_WindowsUpdates_Update.ps1"',
                                 shell=True,
                                 stdout=subprocess.PIPE,
