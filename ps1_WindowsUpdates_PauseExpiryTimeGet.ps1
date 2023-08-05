@@ -1,0 +1,1 @@
+Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings'| Select-Object PauseUpdatesExpiryTime
